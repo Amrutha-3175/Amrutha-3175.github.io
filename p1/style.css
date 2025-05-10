@@ -48,3 +48,8 @@ header a{
 .title{
     font-size:30px;
 }
+.boss{
+    width:300p;
+    padding:40px;
+    border-radius: 6px;
+}
