@@ -17,3 +17,34 @@ li{
     font-size:20px;
     padding:5px;
 }
+header a{
+    text-decoration:none;
+}
+.row{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+.box{
+    width: 500p;
+    padding:50px;
+}
+.btn-signup{
+    background-color:burlywood;
+    margin-top: 10px;
+    padding:8px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+}
+.summary{
+    font-size:20px;
+    margin-top:10px;
+}
+.image{
+    border-radius:100px;
+}
+.title{
+    font-size:30px;
+}
