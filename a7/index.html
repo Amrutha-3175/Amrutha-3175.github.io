@@ -34,6 +34,41 @@
                     </tr>
                 </table>
             </form>
+            <div id="result" style="margin-top: 20px; font-weight:bold;"></div>
+
         </center>
+        <script>
+        document.getElementById('calcForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            const num1 = parseFloat(document.getElementById('t1').value);
+            const num2 = parseFloat(document.getElementById('t2').value);
+            const operation = document.querySelector('input[name="cal"]:checked').value;
+
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Please enter valid numbers.";
+            } else {
+                switch (operation) {
+                    case '+': result = num1 + num2; break;
+                    case '-': result = num1 - num2; break;
+                    case '*': result = num1 * num2; break;
+                    case '/':
+                        if (num2 === 0) {
+                            result = "Cannot divide by zero.";
+                        } else {
+                            result = num1 / num2;
+                        }
+                        break;
+                }
+            }
+
+            document.getElementById('result').innerText = "Result: " + result;
+        });
+    </script>
+</body>
+</html>
+
     </body>
 </html>
