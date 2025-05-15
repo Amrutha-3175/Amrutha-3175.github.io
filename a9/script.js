@@ -14,11 +14,7 @@ const fruits = [
     price: 60,
     image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
   },
-  {
-    name: "Grapes",
-    price: 80,
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/19/Table_grapes_on_white.jpg"
-  },
+  
   {
     name: "Mango",
     price: 100,
