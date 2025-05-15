@@ -23,18 +23,45 @@ const fruits = [
 ];
 
 const container = document.getElementById("fruitContainer");
-
+function renderFruits(){
+    container.innerHTML="";
+}
 fruits.forEach(fruit => {
-  const card = document.createElement("div");
-  card.className = "card";
+  container.innerHTML += `
+      <div class="card">
+        <img src="${fruit.image}" alt="${fruit.name}" />
+        <div class="card-body">
+          <h3 class="fruit-name">${fruit.name}</h3>
+          <p class="price">Price: ₹${fruit.price}</p>
+        </div>
+      </div>
+    `;
+  });
 
-  card.innerHTML = `
-    <img src="${fruit.image}" alt="${fruit.name}">
-    <div class="card-body">
-      <div class="fruit-name">${fruit.name}</div>
-      <div class="price">₹${fruit.price}</div>
-    </div>
-  `;
 
-  container.appendChild(card);
+document.getElementById("addFruitBtn").addEventListener("click", () => {
+  const id = Number(document.getElementById("fruitId").value);
+  const name = document.getElementById("fruitName").value.trim();
+  const price = Number(document.getElementById("fruitPrice").value);
+  const image = document.getElementById("fruitImage").value.trim();
+
+  if (!id || !name || !price || !image) {
+    alert("Please fill all the fields correctly.");
+    return;
+  }
+
+  
+  fruits.push({ id, name, price, image });
+
+  
+  document.getElementById("fruitId").value = "";
+  document.getElementById("fruitName").value = "";
+  document.getElementById("fruitPrice").value = "";
+  document.getElementById("fruitImage").value = "";
+
+  renderFruits();
 });
+
+
+renderFruits();
+
