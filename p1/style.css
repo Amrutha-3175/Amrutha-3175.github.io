@@ -6,12 +6,12 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #14e033;
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #3a3a3a;
+    background-color: #b5eb49;
     color: white;
     padding: 20px;
 }
@@ -27,7 +27,7 @@ header nav ul li{
 }
 header a{
     text-decoration:none;
-    color: white;
+    color: rgb(215, 220, 105);
     font-size: 18px;
 }
 header a:hover{
@@ -37,7 +37,7 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #59a4c0;
 }
 .box{
     width: 40%;
@@ -45,11 +45,11 @@ header a:hover{
 }
 .title{
     font-size: 28px;
-    color: #333;
+    color: #a7689c;
 }
 .summary{
     font-size:16px;
-    color:#555;
+    color:#149f57;
 }
 .image{
     width:100%;
@@ -134,7 +134,7 @@ header a:hover{
 
 .service-card p {
     font-size: 16px;
-    color: #777;
+    color: #c4a341;
 }
 
 /* About Section */
@@ -151,7 +151,7 @@ header a:hover{
 
 .about-container p {
     font-size: 18px;
-    color: #555;
+    color: #d4cb63;
 }
 
 /* Contact Section */
@@ -172,22 +172,22 @@ header a:hover{
     padding: 12px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #5d85c5;
 }
 
 .contact-form button {
-    background-color: #3a3a3a;
+    background-color: #cf6a95;
     color: white;
     font-size: 18px;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #555;
+    background-color: #50a5ba;
 }
 
 .contact-form p {
     font-size: 18px;
-    color: #555;
+    color: #5c74e0;
     margin-top: 10px;
 }
