@@ -1,7 +1,7 @@
 const items = [
-  { name: 'Apple', price: 0.5 },
-  { name: 'Banana', price: 0.3 },
-  { name: 'Orange', price: 0.8 }
+  { name: 'Apple', price: 50 },
+  { name: 'Banana', price: 30 },
+  { name: 'Orange', price: 80 }
 ];
 
 // Create a new array with updated prices
@@ -12,5 +12,5 @@ const updatedItems = items.map(item => ({
 
 // Print updated items
 updatedItems.forEach(item => {
-  console.log(`Name: ${item.name}, Price: $${item.price}`);
+  console.log(`Name: {item.name}, Price: {item.price}`);
 });
