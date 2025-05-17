@@ -12,5 +12,5 @@ const updatedItems = items.map(item => ({
 
 // Print updated items
 updatedItems.forEach(item => {
-  console.log(`Name: {item.name}, Price: {item.price}`);
+  console.log(`Name: ${item.name}, Price: ${item.price}`);
 });
