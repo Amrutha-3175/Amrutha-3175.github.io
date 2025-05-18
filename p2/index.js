@@ -1,7 +1,7 @@
 const products=[
     {id:1, name:"T-shirt", price:200},
     {id:2, name:"Jeans", price:300},
-    {id;3, name:"Shirt", price:500},
+    {id:3, name:"Shirt", price:500},
 
 ];
 const showProducts=() =>{
