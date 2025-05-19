@@ -1,25 +1,24 @@
 const cardInput = document.getElementById("cardNumber");
 const pinInput = document.getElementById("pin");
-const submitBtn = document.getElementById("submit");
+const submitBtn = document.getElementById("submitBtn");
 const loginForm = document.getElementById("loginForm");
 const welcomeScreen = document.getElementById("welcomeScreen");
 
+// Sample user database
+const validUsers = {
+  "1234567890": { pin: "1234", name: "Amrutha" },
+  "9876543210": { pin: "5678", name: "Vinutha" }
+};
 
-
-
-const customers = [
-  { cardNumber: "1234567890", pin: "1234", name: "John", balance: 0 },
-  { car: "1234567891", pin: "2345", name: "Cathy", balance: 0 },
-];
 function validateInputs() {
   const card = cardInput.value.trim();
   const pin = pinInput.value.trim();
   const user = validUsers[card];
 
   if (user && user.pin === pin) {
-    submit.disabled = false;
+    submitBtn.disabled = false;
   } else {
-    submit.disabled = true;
+    submitBtn.disabled = true;
   }
 }
 
