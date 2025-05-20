@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V. Amrutha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>    
-<div class="container"></div> 
-<header> 
-<h1>Amrutha</h1> 
-<nav>
-<ul>
-<li><a  href="#home">Home</a></li>
-<li><a  href="#projects">Projects</a></li>   
-<li><a  href="#services">Services</a></li> 
-<li><a  href="#about">About</a></li>  
-<li><a  href="#contact">Contact</a></li> 
-</ul> 
-</nav>
- </header>
- <main>
- <section id="home">
-<div class="row"> 
- <div class="box">  
-    <h1 class="title">Mern stack developer</h1>
-    <p class="summary">    
-    The MERN stack is a collection of JavaScript-based technologies that are used together to develop web applications. The stack consists of MongoDB, Express, React, and Node. js. MongoDB is a highly scalable document database that makes it easy to store and retrieve data in JSON documents                </p>
-    <p><button class="Signup">Know more</button></p>    
- </div>  
- <div class="box"><img src="image.png" width="300px" class="image" alt="Authors Image"/>            
-  </div>
-</div>   
-</section>
- <section id="projects">
-    <h2 class="projects-heading">Projects</h2>    
-    <div class="projects-container"> 
-    <div class="project-card">   
-    <h3>Project 1</h3>   
-<p>Some description to the project</p>
-<a href="/p2/index.html" class="demo-button" >View Demo</a> 
- </div>  
-<div class="project-card">  
-<h3>Project 2</h3>  
- <p>Description for project 2 goes here.</p>           
-<a href="/p3/index.html" class="demo-button" >View Demo</a>
-</div>
-<div class="project-card">    
-<h3>Project 3</h3>   
-<p>Description for project 3 goes here.</p>            
-<a href="/p4/index.html" class="demo-button" >View Demo</a>   
-</div> 
-</div>
-</section>
-<section id="services">    
-<h2 class="section-heading">Services</h2>
-<div class="services-container">   
-<div class="service-card">  
-<img src="webdev.jpg" alt="Web Development" class="service-image">   
- <h3>Web Development</h3>    
-<p>Build responsive and dynamic websites using the MERN stack.</p>   
-</div>
-<div class="service-card">
-    <img src="apiintegration.jpg" alt="API Integration" class="service-image"> 
-    <h3>API Integration</h3>     
-    <p>Seamlessly integrate third-party APIs for enhanced functionality.</p>        
-</div>   
-<div class="service-card">
-<img src="uiuxdesign.jpg" alt="UI/UX Design" class="service-image">
-<h3>UI/UX Design</h3>    
-<p>Create intuitive user interfaces and engaging experiences.</p>       
-</div>
-</div>
-</section>
-<section id="about">
-<h2 class="section-heading">About Me</h2>
-<div class="about-container">  
-<p>Hello! I'm Amrutha, a passionate MERN Stack Developer dedicated to crafting clean and functional web solutions. I enjoy building user-friendly apps and learning new technologies.</p>    
-</div>
-</section>
-<section id="contact"> 
-    <h2 class="section-heading">Contact</h2>
-<div class="contact-container">   
-<form class="contact-form">  
- <input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>    
- <textarea placeholder="Your Message" rows="5" required></textarea>            
-<p1>Name:Amrutha</p1>  
-<p2>Email id:amruthakrishna3175@gmail.com</p2>   
-<p3>Ph.No:8688154488</p3>
-<button type="submit">Send Message</button>
-</form>
- </div>
-</section>  
-</main>
-<footer>
+<body>
+  <header>
+    <h1>V. Amrutha</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-</footer>
+  <section class="intro" id="home">
+    <h2>MERN Stack Developer</h2>
+    <p>
+      Hello! I'm V. Amrutha, a passionate MERN stack developer dedicated to building fast, scalable, and user-friendly web applications. With a love for clean code and beautiful UI/UX, I aim to create digital experiences that make a difference. I'm constantly learning and growing in the tech space. I specialize in MongoDB, Express.js, React, and Node.js. Whether it's front-end or back-end, I'm always ready to take on a challenge.
+    </p>
+    <button class="btn" onclick="knowMore()">Know More</button>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="images/food.png" alt="Project 1 Image" />
+        <h3>Project 1</h3>
+        <p>A food web page which basically shows all the contents of a food mart.</p>
+        <a href="/p2/index.html" class="demo-button" >View Demo</a>
+      </div>
+      <div class="card">
+        <img src="images/cart.png" alt="Project 2 Image" />
+        <h3>Project 2</h3>
+        <p>Online cart system which enables us to add products in our cart.</p>
+        <a href="/p3/index.html" class="demo-button" >View Demo</a>
+      </div>
+      <div class="card">
+        <img src="images/bank.png" alt="Project 3 Image" />
+        <h3>Project 3</h3>
+        <p>Bank Login System</p>
+        <a href="/p4/index.html" class="demo-button" >View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="images/web.png" alt="Web Development" />
+        <h3>Web Development</h3>
+        <p>Full-stack websites using the MERN stack.</p>
+      </div>
+      <div class="card">
+        <img src="images/uiux.png" alt="UI/UX Design" />
+        <h3>UI/UX Design</h3>
+        <p>Designing modern and responsive interfaces.</p>
+      </div>
+      <div class="card">
+        <img src="images/appint.png" alt="API Integration" />
+        <h3>API Integration</h3>
+        <p>RESTful APIs and third-party integrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a B.Tech student with a deep interest in full-stack development and problem-solving. I enjoy transforming ideas into reality using code. I’ve built various projects that reflect both my skills and passion. I believe in lifelong learning and staying up to date with the latest technologies. I'm driven by creativity, curiosity, and a desire to contribute meaningfully in the tech industry.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button class="btn">Send Message</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>V. Amrutha | Email: amruthakrishna3175@gmail.com | Phone: 8688154488</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
