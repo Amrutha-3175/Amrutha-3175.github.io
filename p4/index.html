@@ -1,21 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="'viewport" content="width=device-width,initial-scale=1.0">
-        <titile>Document</titile>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="login-container" id="login-form">
-        <h1>Bank</h1>
-        <hr/>
-        <input type="text" id="cardNumber" placeholder="Card Number"/>
-        <input type="password" id="pin" placeholder="PIN"/>
-        <button id="submit" disabled>Submit</button>
-        <hr/>
-        </div>
-        <div class="welcome-screen" id="welcomeScreen" style="display: none;"></div>
-        <script src="index.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container" id="loginForm">
+    <h2>Login Page</h2>
+    <input type="text" id="cardNumber" placeholder="Card Number" />
+    <input type="password" id="pin" placeholder="PIN" />
+    <button id="submitBtn" disabled>Submit</button>
+  </div>
+
+  <div class="welcome-screen" id="welcomeScreen" style="display: none;"></div>
+
+  <!-- Make sure this is at the bottom -->
+  <script src="index.js"></script>
+</body>
 </html>
